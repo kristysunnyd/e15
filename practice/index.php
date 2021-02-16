@@ -7,5 +7,6 @@
 </head>
 <body>
     <h1>Practice Application</h1>
+    <h2>By: Kristy Sun</h2>
 </body>
 </html>
