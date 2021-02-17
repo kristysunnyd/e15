@@ -1,21 +1,13 @@
 <?php
 
-function isPalindrome($inputString)
-{
+session_start();
+
+if (isset($_SESSION['results'])) {
+    $results = $_SESSION['results'];
+    
+    extract($results);
+    
+    $_SESSION['results'] = null;
 }
-
-function isBigWord($inputString)
-{
-    return strlen($inputString) > 7;
-    // if(strlen($inputString) > 7) {
-    //     return true;
-    // } else {
-    //     return false;
-    // }
-}
-
-$inputString = 'cat';
-
-$isBigWord = isBigWord($inputString);
 
 require 'index-view.php';

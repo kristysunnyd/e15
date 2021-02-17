@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200;400;800&display=swap");
+
+body {
+  background-color: #ffddf2;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+
+h1 {
+  font-size: 3em;
+  font-family: "Fira Sans", sans-serif;
+  text-align: center;
+  color: #ff42b6;
+  margin-bottom: 0;
+}
+
+h2,
+h3 {
+  font-family: "Fira Sans", sans-serif;
+  text-align: center;
+  margin-bottom: 0.2em;
+}
+
+.results h2 {
+  border-bottom: solid #a791ff 2px;
+  color: #462dad;
+  padding-bottom: 0.3em;
+}
+
+p.description {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.1em;
+  margin-bottom: 2em;
+  font-weight: 400;
+}
+
+p {
+  text-align: center;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 500;
+  margin-top: 0.5em;
+}
+
+#text {
+  padding-bottom: 1em;
+  border-bottom: dashed #a791ff 2px;
+}
+
+.formsubmit {
+  display: block;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+form {
+  display: inline-block;
+}
+
+input {
+  font-size: 1.5em;
+  border: none;
+  background: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  height: 60px;
+  width: 400px;
+  padding-left: 0.3em;
+  text-align: center;
+}
+
+#submitbutton {
+  margin-top: 1em;
+  height: 50px;
+  width: 200px;
+  border-radius: 8px;
+  border: none;
+  background: #a791ff;
+  font-size: 1.5em;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 800;
+  color: #462dad;
+}
+
+.results {
+  margin: 3em;
+  border: solid #a791ff 2px;
+  background: #d0c4ff;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-bottom: 1.2em;
+  padding-top: 0.8em;
+}
