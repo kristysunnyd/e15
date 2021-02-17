@@ -9,8 +9,10 @@
 
 <body>
     <h1>e15 Project 1</h1>
+    <h3>By: Kristy Sun</h3>
 
-    <p class="description"> Type your desired text below to see if it is a Palindrome and how many vowels and consonants
+    <p class="description"> Type your desired text below to see if it is a Palindrome and how many vowels and
+        consonants
         are in the text you provided.
     </p>
 
