@@ -43,7 +43,7 @@ class PageController extends Controller
         $currentTime = $request->input('dateTime', null);
         $break = $request->input('break', null);
 
-
+        #converting Yes/No into a set number for skipping
         if ($skipOpening == "opYes") {
             $skipOpening = 2;
         } else {
@@ -70,7 +70,7 @@ class PageController extends Controller
 
         $convertTime = strtotime($currentTime);
 
-
+        #showing time and dates
         $currentTimeShow = date('l F j Y\, g:i A', $convertTime);
         $dateTime = date('l F j Y\, g:i A', strtotime($addHour.$addMinutes, $convertTime));
 

@@ -91,8 +91,6 @@ E15 Project 2
     @endif
     </div>
     <button type='submit' id='submitbutton'>Submit</button>
-    {{-- <input type='submit' class='btn btn-primary' value='Submit'> --}}
-    
 
 </form>
 
