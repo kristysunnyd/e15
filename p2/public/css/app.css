@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;1,800;1,900&display=swap");
+
+body {
+    background-color: #abc6db;
+    font-family: "Rubik", sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+}
+
+h1 {
+    font-size: 2.6em;
+    text-align: center;
+    margin-top: 0em;
+    font-weight: 900;
+    font-style: italic;
+}
+
+h2 {
+    text-align: center;
+    padding-bottom: 0;
+}
+
+h3 {
+    margin: 0;
+    padding-top: 0.3em;
+    font-size: 1.5em;
+    font-weight: 800;
+    font-style: italic;
+}
+
+p {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    font-size: 1.2em;
+    font-weight: 800;
+}
+
+#logo {
+    margin-left: 15em;
+    margin-right: auto;
+    margin-bottom: 0;
+    padding: 0;
+    width: 200px;
+}
+
+#error {
+    color: #d33a53;
+}
+
+fieldset {
+    background-color: white;
+    margin-bottom: 0.2em;
+}
+
+#submitbutton {
+    background-color: #252938;
+    height: 50px;
+    width: 130px;
+    margin-top: 0.3em;
+    margin-bottom: 1em;
+    border-radius: 8px;
+    border: none;
+    font-size: 1.5em;
+    font-family: "Rubik", sans-serif;
+    font-weight: 800;
+    color: #ffffff;
+}
+
+#totaltime {
+    margin: 0;
+    padding: 0;
+    font-family: "Rubik", sans-serif;
+    font-weight: 900;
+    font-size: 2em;
+}
+
+#currenttime {
+    margin-top: 1.5em;
+    font-size: 1.2em;
+}
+
+#currenttime h3 {
+    font-size: 1em;
+    padding-bottom: 0.2em;
+}
+
+#currenttime p {
+    font-size: 1.3em;
+    padding-bottom: 1em;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+    font-weight: 400;
+}
+
+.results {
+    background-color: #6996b9;
+    padding: 1.5em 0.5em 2em 0.5em;
+    text-align: center;
+}

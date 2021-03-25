@@ -1,21 +1,23 @@
 @extends('layouts/main')
 
 @section('title')
-<title>E15 Project 2</title>
+E15 Project 2
 @endsection
 
 @section('head')
-    <link href='/css/app.css' rel='stylesheet'>
-
+<link href='/css/app.css' rel='stylesheet'>
 @endsection
 
 @section('content')
-<h1>Drama/ TV Series Time Calculator</h1>
+<img id='logo' src='/images/littletv.png' alt='little tv character'>
+
+<h1 id='dramatitle'>Drama/ TV Series Calculator</h1>
 
 
 <form method='GET' action='/calculator'>
 
-    <h2>Want to know how long it'll take to binge a series? Here's the calculator for you! </h2>
+    <h2>Want to know how long it'll take to binge a series?</h2>
+    <h2>Here's the calculator for you!</h2>
 
     <fieldset>
         <label for='videoLength'>On average, how long is one episode in <strong>minutes?</strong></label>
@@ -78,46 +80,46 @@
 
 
     </fieldset>
-    <br>
-    <input type='submit' class='btn btn-primary' value='Submit'>
-
+    <div id='error'>
     @if(count($errors) > 0)
     <ul class='alert alert-danger'>
         @foreach ($errors->all() as $error)
         <li>{{ $error }}</li>
         @endforeach
     </ul>
+    
     @endif
+    </div>
+    <button type='submit' id='submitbutton'>Submit</button>
+    {{-- <input type='submit' class='btn btn-primary' value='Submit'> --}}
+    
 
 </form>
 
 {{-- Results --}}
+
 @if(!is_null($totalTime))
-Here are the results!
-<br>
+<div class='results'>
+<h3>Here are the results!</h3>
 
+<p>Total Time:</p>
+<div id='totaltime'>
+    @if($hours < 1)
+    {{$minutes}} {{ Str::plural('minute', $minutes) }}
 
-Total Time:
-<br>
-{{-- This @if block is meant to makeup for the different scenarios of hour(s) and minute(s) --}}
-@if($hours < 1) 
-{{$minutes}} minutes 
+    @elseif($minutes == 0)
+    {{$hours}} {{ Str::plural('hour', $hours) }}
 
-@elseif($hours <=1 & $minutes <=1) 
-{{$hours}} hour & {{$minutes}} minute 
-
-@elseif($hours <=1 & $minutes> 1)
-    {{$hours}} hour & {{$minutes}} minutes
-
-    @elseif($hours > 1 & $minutes <= 1) 
-    {{$hours}} hours & {{$minutes}} minute 
-    
-    @else 
-    {{$hours}} hours & {{$minutes}} minutes 
-    
-    @endif <br>
-        Start Time: {{$currentTimeShow}} <br>
-        End Time: {{$dateTime}}
+    @else
+    {{$hours}} {{ Str::plural('hour', $hours) }} & {{ $minutes }} {{ Str::plural('minute', $minutes) }}
+    @endif
+    </div>
+    <div id='currenttime'>
+    <h3>Start Time:</h3>
+    <p>{{$currentTimeShow}}</p>
+    <h3>End Time:</h3>
+    <p>{{$dateTime}}</p>
+        </div>
 
         @endif
 

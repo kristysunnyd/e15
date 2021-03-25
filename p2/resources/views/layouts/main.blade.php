@@ -3,8 +3,10 @@
 <head>
     <title>@yield('title')</title>
     <meta charset='utf-8'>
-    @yield('head')
     
+
+    @yield('head')
+   
 </head>
 <body>
 
@@ -18,7 +20,7 @@
 
     <footer>
 
-    </footer>
+    </footer> 
 
 </body>
 </html>
