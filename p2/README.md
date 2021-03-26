@@ -10,3 +10,4 @@
 -   [date()](https://www.php.net/manual/en/function.date)
 -   [datetime - format](https://www.php.net/manual/en/datetime.format.php)
 -   [strtotime()](https://www.php.net/manual/en/function.strtotime.php)
+-   [Google Fonts - Rubik](https://fonts.google.com/specimen/Rubik?preview.text_type=custom#standard-styles)
