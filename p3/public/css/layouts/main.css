@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;1,300;1,700;1,900&display=swap");
+
+body {
+    font-family: "Rubik", sans-serif;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(172, 126, 216);
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 1.5em;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    text-decoration: none;
+}
+
+#logout-style {
+    position: fixed;
+    right: 10px;
+    text-align: right;
+    margin-top: 0;
+    padding-right: 0.5em;
+    font-size: 0.7em;
+}
+
+/* Welcome Page */
+.welcome {
+    text-align: center;
+}
+
+.newDramas {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 2.5em;
+}
+.newDramas h2 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 2em;
+}
+
+.newDramas ul {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.newDramas li {
+    display: inline-grid;
+    vertical-align: top;
+    font-size: 1.2em;
+    margin-bottom: 0.9em;
+}
+
+.newDramas img {
+    width: 300px;
+    height: 300px;
+}
+
+/* Login Page */
+#login {
+    font-size: 1.2em;
+    padding-left: 0.5em;
+}
+
+/* Full List of Dramas */
+
+.fullDramas {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.fullDramas h2 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 2em;
+}
+
+.fullDramas ul {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.fullDramas li {
+    display: inline-grid;
+    width: 300px;
+    vertical-align: top;
+    font-size: 1.2em;
+}
+
+.fullDramas img {
+    width: 300px;
+    height: 300px;
+}
+
+/* List of Reviews - User Dashboard */
+#userinfo {
+    border-bottom: solid 2px black;
+    padding-left: 0.6em;
+}
+
+#userinfo h1 {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.reviewsList li {
+    padding-bottom: 1.5em;
+    padding-top: 1em;
+    border-bottom: solid 1px black;
+}
+
+.reviewsList h3 {
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* List Page */
+.drama-box h3 {
+    font-weight: 700;
+    font-style: italic;
+}
+
+.drama-box {
+    border-bottom: dashed black 2.5px;
+}
+
+#leave-review {
+    font-size: 1.3em;
+}
+
+#reviewsList h2 {
+    font-weight: bold;
+    font-style: italic;
+}
+
+#reviewsList h3 {
+    font-weight: bold;
+}
+
+#reviewsList ul {
+    list-style-type: none;
+    padding-left: 0.2em;
+}
+
+#reviewsList li {
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+    background-color: rgb(197, 163, 228);
+}
+
+#review-form {
+    padding-left: 0.5em;
+}
+
+#review-form h3 {
+    font-size: 2em;
+    font-weight: 700;
+}
